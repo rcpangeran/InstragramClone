@@ -4,12 +4,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#F65C9C"
-    android:onClick="rootLayoutTapped"
-    tools:context=".SignUpActivity">
+    android:background="#09CDCD"
+    android:onClick="rootLayoutLoginTapped"
+    tools:context=".LoginActivity">
 
     <ImageView
-        android:id="@+id/imgSignUpInstagram"
+        android:id="@+id/imageView"
         android:layout_width="75dp"
         android:layout_height="75dp"
         android:layout_marginStart="130dp"
@@ -21,7 +21,7 @@
         app:srcCompat="@drawable/instagramlogo" />
 
     <EditText
-        android:id="@+id/edtSignUpEmail"
+        android:id="@+id/edtLoginEmail"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="30dp"
@@ -31,29 +31,12 @@
         android:hint="Please enter your Email Address"
         android:inputType="textPersonName"
         android:textAlignment="center"
-        android:textColor="#FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imgSignUpInstagram" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
     <EditText
-        android:id="@+id/edtSignUpUserName"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="30dp"
-        android:ems="10"
-        android:hint="Please enter User Name"
-        android:inputType="textPersonName"
-        android:textAlignment="center"
-        android:textColor="#FFFFFF"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edtSignUpEmail" />
-
-    <EditText
-        android:id="@+id/edtSignUpPassword"
+        android:id="@+id/edtLoginPassword"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="30dp"
@@ -63,36 +46,36 @@
         android:hint="Please enter your Password"
         android:inputType="textPassword"
         android:textAlignment="center"
-        android:textColor="#FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edtSignUpUserName" />
+        app:layout_constraintTop_toBottomOf="@+id/edtLoginEmail" />
 
     <Button
-        android:id="@+id/btnSignUpSignUp"
+        android:id="@+id/btnLoginLogin"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="30dp"
         android:layout_marginTop="40dp"
         android:layout_marginEnd="30dp"
         android:background="@color/colorPrimary"
-        android:text="Sign Up"
+        android:text="Log in"
         android:textColor="#FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edtSignUpPassword" />
+        app:layout_constraintTop_toBottomOf="@+id/edtLoginPassword" />
 
     <Button
-        android:id="@+id/btnSignUpLogin"
+        android:id="@+id/btnLoginSignUp"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="30dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="30dp"
-        android:background="#4170E8"
-        android:text="Log in"
+        android:background="#FACA09"
+        android:text="Sign Up"
         android:textColor="#FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnSignUpSignUp" />
+        app:layout_constraintTop_toBottomOf="@+id/btnLoginLogin" />
+
 </android.support.constraint.ConstraintLayout>
