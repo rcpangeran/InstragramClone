@@ -51,8 +51,7 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
         btnSignUpLogin.setOnClickListener(SignUpActivity.this);
 
         if (ParseUser.getCurrentUser() != null) {
-            // ParseUser.logOut();
-            // transitionToSocialMediaActivity();
+            transitionToSocialMediaActivity();
         }
    }
 
@@ -100,8 +99,7 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
                 }
                 break;
             case (R.id.btnSignUpLogin) :
-                Intent intent = new Intent(SignUpActivity.this, LoginActivity.class);
-                startActivity(intent);
+                transitionToLoginActivity();
                 break;
         }
 
@@ -116,8 +114,15 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
         }
     }
 
+    private void transitionToLoginActivity() {
+        Intent intent = new Intent(SignUpActivity.this, LoginActivity.class);
+        startActivity(intent);
+        finish();
+    }
+
     private void transitionToSocialMediaActivity() {
         Intent intent = new Intent(SignUpActivity.this, SocialMediaActivity.class);
         startActivity(intent);
+        finish();
     }
 }
