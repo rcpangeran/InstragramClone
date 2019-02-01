@@ -77,7 +77,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                                 transitionToSocialMediaActivity();
                             } else {
                                 FancyToast.makeText(LoginActivity.this,
-                                        user.getUsername() + " failed to Log in",
+                                        "failed to Log in",
                                         Toast.LENGTH_SHORT, FancyToast.ERROR,
                                         true).show();
                             }
